@@ -1,5 +1,5 @@
 {% set name = "cabarchive" %}
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 04f60089473114cf26eab2b7e1d09611c5bfaf8edd3202dacef66bb5c71e48cf
+  sha256: b508b1cad890857e55f3f7a2027ca7bedb9dc05de5eff07f8289f9546200a7aa
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
